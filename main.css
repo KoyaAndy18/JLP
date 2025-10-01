@@ -1,0 +1,48 @@
+/* Basic reset / body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee), 
+              url('https://source.unsplash.com/1600x900/?pink,flowers') center/cover no-repeat;
+  position: relative;
+}
+#hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 182, 193, 0.4); /* soft pink overlay */
+}
+#hero h1 span {
+  color: #ff69b4; /* highlight name with hotpink */
+}
+#hero .container {
+  z-index: 2;
+}
+
+/* Navbar link hover effect */
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Project cards */
+.project-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Contact form */
+#formAlert {
+  display: none;
+  color: green;
+}
+
+/* Smooth scroll (optional) */
+html {
+  scroll-behavior: smooth;
+}
